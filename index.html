@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </head>
 <body>
@@ -24,19 +27,7 @@
         <a class="navbar-brand" href="./index.html">
            <img  src="./img/Imagen18.png"  alt="..." loading="lazy">
         </a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    </div>
     </nav>
 
     <!-- HEADER -->
@@ -50,102 +41,56 @@
 
       </div>
       <div class="col-md-6">
-        <div class="header-content-right mt-5">
+        <div class="header-content-right">
           <img src="./img/Imagen10.png" class="navbar-brand-img" alt="...">
-          <p class="h2">Todas mis cuentas en un solo lugar!</p>
-          <a href="#" class="btn btn-outline-primary btn-lg mt-5 header-btn"> Ingresar!</a>
+          <p class="h2">Todas mis cuentas en un solo lugar<span class="dot font-weight-bold">.</span></p>
+          <a href="#" class="btn btn-outline-primary btn-lg mt-5 header-btn" data-toggle="modal" data-target="#myModal"> Ingresar<span class="dot font-weight-bold">.</span></a>
           </div>
       </div>
     </div>
   </div>
 </header>
 
-<!-- TESTIMONIAL
-<div class="jumbotron text-center">
-  <div class="container">
-  <h1>Te daremos el Poder. para que puedas ver todas tus cuentas desde 1 solo lugar y tengas el Control. de lo que es tuyo.</h1>
-</div>
-</div>
- -->
+  <!-- Modal -->
+  <div class="modal right fade in" id="myModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <img  src="./img/Imagen18.png"  alt="..." loading="lazy">
+          <button type="button" class="close btn-outline-danger" data-dismiss="modal">×</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p class="h3">Me interesa saber mas sobre este proyecto!</p>
+          <form id="modal-form" accept-charset="UTF-8">
+            <div class="form-group">
+              <label for="name"><span class=""></span> Ingresá tu Nombre<span class="dot font-weight-bold">.</span></label>
+              <input type="text" class="form-control" id="name" placeholder="Tu Nombre">
+            </div>
+            
+            <div class="form-group">
+              <label for="email"><span class=""></span> Ingresá tu Email<span class="dot font-weight-bold">.</span> </label>
+              <input type="email" class="form-control" id="email" placeholder="Ingresar Email">
+            </div>
+              <button type="submit" class="btn btn-outline-primary btn-lg mt-3">Enviar<span class="dot font-weight-bold">.</span>
+              </button>
+          </form>
+  
+        </div>
+
+      </div>
+    </div>
+  </div>
+
 <section id="testinmonial">
 <div class="container mt-5">
   <div class="mb-5">
-    <p class="h1">Te daremos el <span class="logo font-weight-bold">Beneficio</span><span class="dot font-weight-bold">.</span> para ver todas tus cuentas en 1 solo lugar y tengas el <span class="logo font-weight-bold">Control</span><span class="dot font-weight-bold">.</span> de lo que es tuyo.</p>
+    <p class="h1">Te daremos el <span class="logo font-weight-bold">Beneficio</span><span class="dot font-weight-bold">.</span> de ver todas tus cuentas en 1 solo lugar y tengas el <span class="logo font-weight-bold">Control</span><span class="dot font-weight-bold">.</span> de lo que es tuyo<span class="dot font-weight-bold">.</span></p>
   </div>
 </div>
-</section>
-<!--
-<section id="info-one">
-  <div class="container mt-5">
-    <div class="row mt-5">
-      <div class="col-md-6">
-          <div class="info-left">
-            <img src="img/204x40Logo.png" style: "width:100%;">
-          </div>
-      </div>
-
-      <div class="col-md-6 my-auto">
-        <div class="info-right">
-          <h2> loren mio ></h2>
-          <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugit, culpa quia quis laborum voluptas vel fugiat minima quos provident minus dolore est eos laboriosam, ratione vero veritatis, facere dolorem.</p>
-          <a href="#" class="btn btn-outline-primary btn-lg mt-3"> Leer MAS!</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section id="info-two" style="background: #f1f1f1;">
-<div class="container">
-  <div class="row my-5">
-    <div class="col-md-6">
-      <h2> lorem ipsum color </h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae numquam voluptate voluptatibus maiores veritatis dolorum corrupti iste nostrum, nemo ducimus, et dolore voluptas ipsa delectus, sed nisi! Quam, id facilis.</p>
-    </div>
-    <div class="col-md-6">
-      <h2> lorem ipsum color </h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae numquam voluptate voluptatibus maiores veritatis dolorum corrupti iste nostrum, nemo ducimus, et dolore voluptas ipsa delectus, sed nisi! Quam, id facilis.</p>
-    </div>
-
-  </div>
-</div>
-</section>
--->
-<section id="contacto">
-
-  <div class="container mt-5">
-    <p class="h1 font-weight-bold">Contacto<span class="dot font-weight-bold">.</span></p>
-    <div class="row">
-      <div class="col-md-5">
-        <form class="card my-4">
-          <div class="card-body">
-            <div class="input-group mb-3">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text">Nombre</span>
-                </div>
-                <input type="text" aria-label="Nombre" class="form-control">
-              </div>
-            </div>  
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <span class="input-group-text" id="basic-addon2">@example.com</span>
-              </div>
-            </div>
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text">Comentario</span>
-            </div>
-            <textarea class="form-control" aria-label="With textarea"></textarea>
-          </div>
-          <button type="submit" class="btn btn-outline-primary btn-lg mt-3 btn-block"> Enviar </button>
-          </div>
-        </form>
-      </div>  
-   </div>
-  </div>
 </section>
 
 <!-- FOOTER-->
@@ -157,51 +102,7 @@
 </div>
 
 <!---scripts -->
-<script>
-  window.sr = ScrollReveal();
-    sr.reveal('.navbar', {
-      duration: 3000,
-      origin: 'bottom'
-    });
-    window.sr = ScrollReveal();
-    sr.reveal('.header-content-left', {
-      duration: 2000,
-      origin: 'top',
-      distance: '300px'
-    });
-    window.sr = ScrollReveal();
-    sr.reveal('.header-content-right', {
-      duration: 2000,
-      origin: 'right',
-      distance: '300px'
-    });
-    window.sr = ScrollReveal();
-    sr.reveal('.header-btn', {
-      duration: 2000,
-      origin: 'right',
-      delay: 1000
-    });
-    window.sr = ScrollReveal();
-    sr.reveal('#testimonial', {
-      duration: 2000,
-      origin: 'left',
-      distance: "300px",
-      viewfactor: 0.2
-    });
-    //smothscrolling
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
-</script>
-
+<script src="app.js"> </script>
 
 </body>
 </html>
