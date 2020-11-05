@@ -1,5 +1,3 @@
-const { Alert } = require("bootstrap");
-
 window.sr = ScrollReveal();
 sr.reveal('.navbar', {
   duration: 3000,
